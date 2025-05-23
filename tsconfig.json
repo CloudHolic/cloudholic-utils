@@ -1,12 +1,36 @@
 {
   "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
+    // JavaScript Output
+    "target": "ES2020",
+    "module": "ESNext",
+
+    // Module Interpret
+    "moduleResolution": "bundler",
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+
+    // with Vite
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true,
     "skipLibCheck": true,
-    "outDir": "dist"
+    "noEmit": true,
+
+    // with React
+    "jsx": "react-jsx",
+
+    // Strict
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "verbatimModuleSyntax": true,
+
+    // Library
+    "lib": ["ES2020", "DOM", "DOM.Iterable"]
   },
-  "include": ["src"]
+  "include": ["src/**/*"]
 }
