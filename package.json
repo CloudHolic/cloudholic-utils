@@ -4,7 +4,7 @@
   "description": "Simple hooks, data structures, concepts, etc. for my own use.",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/CloudHolic/cloudholic-utils"
   },
   "scripts": {
     "build": "tsc"
